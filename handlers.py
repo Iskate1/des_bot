@@ -8,7 +8,7 @@ def set_handlers(bot):
         print("Получено сообщение: " + event.text)
 
         if event.text == '/start':
-            bot.send_message(event.chat.id, 'Привет, иди нахуй')
+            bot.send_message(event.chat.id, 'Привет, я бот')
 
         # получаем список услуг из БД
         elif event.text.lower() == 'услуги':
@@ -18,4 +18,4 @@ def set_handlers(bot):
             bot.send_message(event.chat.id, 'https://docs.google.com/document/d/1mqWcUILB1WOEsodbewQKx_sDXy1diWNCbojuVZ148oE/edit')
 
         else:
-            bot.send_message(event.chat.id, f'Я не знаю, что значит "{event.text}", поэтому иди нахуй')
+            bot.send_message(event.chat.id, f'Я не знаю, что значит "{event.text}", поэтому ....')
